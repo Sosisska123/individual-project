@@ -1,0 +1,227 @@
+:root {
+    --red: #ca271a;
+    --red-transparent: rgba(182, 5, 5, 0.7);
+    --gray: #707070;
+    --white: #FDFFFC;
+    --black: #020100;
+}
+
+body {
+    font-family: 'PT serif', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    transition: all 5ms;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+body::selection {
+    background-color: var(--red-transparent);
+    color: var(--white);
+}
+
+.header {
+    display: flex;
+    background-image: url("https://cdn.moypolk.ru/assets/images/bg-black-clouds-small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /*background: var(--red);*/
+    color: var(--white);
+    padding: 1em 2em;
+    justify-content: space-between;
+    box-shadow: 0 4px 14px rgba(0,0,0,.15);
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-flow: column;
+    color: var(--gray);
+    align-items: center;
+    text-align: center;
+}
+
+.title h2 {
+    margin-bottom: -12px;
+}
+
+/*old divider*/
+/*hr {*/
+/*    color: var(--red);*/
+/*    border-color: var(--red);*/
+/*    background-color: var(--red);*/
+/*    width: 60%;*/
+/*    align-items: center;*/
+/*    border-radius: 20px;*/
+/*    !*height: 1em;*!*/
+/*}*/
+
+.hero-text-container {
+    font-family: "PT Serif", serif;
+}
+
+.hero-container {
+    display: grid;
+    /*float: left;*/
+    gap: 20px;
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: auto;
+    margin: 1em 0 2em 0;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+}
+
+#hero-name {
+    /*font-size: 1.5em;*/
+    font-weight: bold;
+}
+
+/*star*/
+#hero-name::before {
+    content: url("https://www.polkrf.ru/assets/index/img/star-title.svg");
+    display: inline-block;
+    transform: scale(0.6) translateY(2px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-container img {
+    border-radius: .5em;
+    justify-self: end;
+    user-select: none;
+    box-shadow: 0 4px 7px rgba(0,0,0,.15);
+}
+
+.story-container {
+    height: auto;
+    margin: 0 8em 0 8em;
+}
+
+.story-title {
+    /*padding: 40px 20px;*/
+    font-family: 'Playfair', serif;
+}
+
+.story-title::after {
+    content: '';
+    background: var(--red);
+    padding-bottom: -22px;
+    width: 60%;
+    align-items: center;
+    position: absolute;
+    display: block;
+    border-radius: 2em;
+    height: 1px;
+}
+
+.story-content {
+    font-size: 1.15em;
+}
+
+.story-image {
+    width: 50em;
+}
+
+.gallery {
+    max-width: 70em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.gallery img {
+    width: 30%;
+    cursor: pointer;
+}
+
+.show-more {
+    width: 50%;
+    height: 3em;
+    color: var(--white);
+    border: none;
+    border-radius: 1em;
+    background: #1f1a20;
+}
+
+#ee {
+    margin: unset;
+    font-size: 1.2em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: 5% auto;
+    display: block;
+    max-width: 80%;
+}
+
+.close {
+    color: var(--white);
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    cursor: pointer;
+}
+
+footer p {
+    display: grid;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        display: flex;
+        gap: 5px;
+        flex-flow: column;
+        justify-self: center;
+        margin-top: 1em;
+        margin-bottom: 0;
+        align-items: center;
+    }
+    .hero-text-container {
+        justify-items: center;
+        text-align: center;
+    }
+
+    #hero-name::before {
+        transform: scale(0.6) translateY(2px);
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .story-container {
+        margin: 0 1.2em 0 1.2em;
+    }
+
+    .story-title::after {
+        width: 80%;
+    }
+
+    .story-image {
+        width: 90vmin;
+    }
+}

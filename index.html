@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Индивидуальный проект</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap " rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap " rel="stylesheet">
+</head>
+    <body>
+        <div class="header">
+            <h1>История моего прадеда</h1>
+        </div>
+
+        <div class="title">
+            <h2>История моего прадеда в военные годы</h2>
+            <p>Вспоминим героя, защитившего Родину...</p>
+        </div>
+
+<!--        <hr>-->
+
+        <div class="hero-container">
+            <img src="images/D2oo520a4DsqI.jpg" alt="Гильманов Гибадулла Гильманович" >
+            <div class="hero-text-container">
+                <h2 id="hero-name">Гильманов Гибадулла Гильманович</h2>
+                <p id="hero-years">01.06.1912 — 03.12.1980</p>
+                <p id="hero-born-place">Место рождения: Татарская АССР, Мамадышский район, Катмышское сельское поселение, село Еникей Чишма</p>
+            </div>
+        </div>
+
+<!--        <hr>-->
+
+        <div class="story-container">
+            <h2 class="story-title">История прадедушки</h2>
+            <p class="story-content">
+                Гильманов Гибадулла Гильманович родился 1 июня 1912 года в селе Еникей Чишма Мамадышского района
+                Татарской АССР. В октябре 1934 года был призван на действительную службу в 371 стрелковый полк,
+                где служил по сентябрь 1936 года. В 1940 году участвовал в Советско-финляндской войне.
+                28 июня 1941 года был призван на Великую Отечественную войну в 85 стрелковый полк на
+                должность командира стрелковой роты. С 15 февраля 1943 года по 9 мая 1945 года служил
+                шофером в составе 341 отдельной автомобильной роты 140 стрелковой дивизии.
+                Воевал на Центральном фронте с 15 февраля 1943 года, с 8 августа 1943 года — в составе
+                I Белорусского фронта, а с 16 декабря 1943 по 25 ноября 1944 года — на 4 Украинском фронте.
+
+                За боевые заслуги награжден орденом Красной Звезды, медалью за победу над Германией,
+                медалью за пройденный путь с боями от Орловской Красной дуги до Праги и победоносного
+                завершения Великой Отечественной войны. Также получил Благодарность Верховного
+                Главнокомандующего И.В. Сталина за образцовое выполнение боевых заданий.
+
+            </p>
+        </div>
+
+<!--        <hr>-->
+
+        <div class="story-container">
+            <h2 class="story-title">Боевые достижения</h2>
+            <p class="story-content">
+                Гильманов Гибадулла Гильманович имеет благодарности за:
+            </p>
+            <ul class="story-content">
+                <li>1943 год: взятие города Орела</li>
+                <li>1944 год: взятие городов Новгород-Северский и Новгород-Волынский</li>
+                <li>1944 год, июль: участие в освобождении города Львова</li>
+                <li>27 января 1945 года: освобождение города Радовица (Чехия)</li>
+                <li>23 февраля 1945 года: освобождение города Бельск (Польша)</li>
+                <li>1 мая 1945 года: освобождение города Острава (Чехия)</li>
+                <li>8 мая 1945 года: освобождение города Оломоуц (Чехия),</li>
+            </ul>
+            <p class="story-content"> а также за прорыв обороны немцев под Ямполем в Западной Украине в марте 1944 года. Победу встретил в звании старшего сержанта в Чехии в городе Оломоуц.</p>
+
+        </div>
+
+
+        <div class="story-container">
+            <h2 class="story-title">Боевой путь в составе 140 стрелковой дивизии</h2>
+            <p class="story-content">В каких-то из этих боевых действий участвовал мой прадед.</p>
+            <img class="story-image" src="images/Screenshot_68.png" alt="Фронтовое письмо" onclick="openModal(this.src)">
+        </div>
+
+
+        <div class="story-container">
+            <h2 class="story-title">Галерея</h2>
+            <div class="gallery">
+                <img src="images/D2oo520a4DsqI.jpg" alt="Дед на фронте" onclick="openModal(this.src)">
+                <img src="images/photo_2025-05-19_22-29-57.jpg" alt="Фронтовое письмо" onclick="openModal(this.src)">
+                <img class="nn" src="https://pamyat-naroda.ru/img/awards/new/Orden_Krasnoj_Zvezdy.png">
+
+<!--                <button class="show-more">Показать еще</button>-->
+            </div>
+        </div>
+
+<!--        <hr>-->
+
+        <div class="story-container">
+            <h2 class="story-title">Архивные документы</h2>
+            <ul>
+                <li><a href="docs/00000213.jpg" target="_blank">Приказ о награждении красной звездой</a></li>
+                <li><a href="https://pamyat-naroda.ru/heroes/podvig-chelovek_nagrazhdenie32400560/" target="_blank">Наградной лист</a></li>
+                <li><a href="docs/00000215_1.jpg" target="_blank">Подвиг</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 | Память о герое</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
