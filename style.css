@@ -123,6 +123,8 @@ body::selection {
 
 .story-content {
     font-size: 1.15em;
+    margin-top: .3em;
+    margin-bottom: .3em;
 }
 
 .story-image {
